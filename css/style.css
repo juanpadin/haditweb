@@ -1,0 +1,460 @@
+/* lines out */
+A {text-decoration: none;}
+/* body */
+* {
+    box-sizing: border-box;
+    
+  }
+body{
+    display: flex;
+  flex-direction: column;
+  text-align: center;
+  width:100%;
+  
+  margin: 0;
+}
+/* navbar */
+
+#Hamburguesa{
+  display: flex;
+  margin-right: 20px;
+
+  
+}
+.HamburguesaTW{
+  width: 50px;
+}
+
+.navbar {
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  height: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+} 
+ 
+.nav-link{
+  padding: 15px;
+  color: white;
+  font-size: 25px;
+  font-family: 'Cantarell', sans-serif;
+  text-decoration: none;
+}
+.nav-link:hover {
+  border-bottom: 4px solid #fff;
+  color: white;
+}
+
+  .title-1{
+    color: white;
+    font-size: 5vh;
+    /*font-family: "Sofia", sans-serif;*/
+    font-family: 'Syne Mono', monospace;
+    background-image: url("https://cdn141.picsart.com/327668377001211.png?type=webp&to=min&r=640");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    padding: 15px 15px 15px 23px;
+    margin: 3px 0px 3px 10px;
+    
+}
+.title-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+.navs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+/* Media Queries */
+
+@media screen and (max-width: 960px){
+    
+ 
+
+  .title-container{
+   width: 100%;
+  }
+ 
+  .navbar{
+    grid-template-columns: 1fr;
+  }
+ 
+  .navs{
+    position: absolute;
+    flex-direction: column;
+    top: 120px;
+    background: linear-gradient(90deg, rgb(19, 19, 19) 0%, rgb(21, 20, 20) 100%);
+    height: 100vh;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+  
+
+}
+
+.nav-link{
+  
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link:hover{
+  background-color: white;
+  color: black;
+  border-bottom: none;
+  
+}
+
+}
+
+/* containers indexes */
+
+#inicio{
+  
+    background: linear-gradient(90deg,rgb(83, 116, 56,0.5)0%,rgb(83,116,56,0.6)100%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#contacto{
+  background: linear-gradient(90deg,rgb(88, 111, 185)0%,rgb(88, 111, 185)100%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#artista{
+  background: linear-gradient(90deg,rgb(197, 132, 94)0%,rgb(197, 132, 94)100%);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+}
+#portfolio{
+  background: linear-gradient(90deg,rgb(231, 138, 138)0%,rgb(231, 138, 138)100%);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#blog{
+  background: linear-gradient(90deg,rgb(113, 169, 177)0%,rgb(113, 169, 177)100%);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  
+  
+}
+
+/* BLOG */
+
+
+
+
+#error1{
+width: 70%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(90, 133, 140);
+border: none;
+font-size: 1.5vw;
+}
+#error2{
+  width:100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#error2 h5{
+  font-size: 3vw;
+}
+#error2 p{
+  font-size: 1.5vw;
+}
+#errorCard{
+  width: 90%;
+  height: 80%;
+ 
+}
+.errorImg1{
+ object-position: bottom;
+}
+#errorImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contenedorImg{
+  width: 100%;
+  height: 50%;
+
+}
+#titulo-blog{
+  margin-top: 4%;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 7vh;
+  width: 80%;
+}
+.tituloblog{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: linear-gradient(90deg,rgb(113, 169, 177)0%,rgb(113, 169, 177)100%);
+}
+
+
+
+/* home */
+
+.container{
+  display: flex;
+  width: 80%;
+  height: 40%;
+ margin: 0px 10px 10px 10px;
+  background-color:rgb(83, 116, 56, 0.5);
+  box-shadow: 10px 10px 20px;
+  
+}
+.box-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+order:1;
+padding: 0px 90px 0px 90px;
+}
+.box-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+order:2;
+}
+.presentation{
+  color: black;
+  font-size: 1.6vw;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.cara{
+  width: 40%;
+}
+
+/* contact-info */
+
+#usuarios{
+display: flex;
+margin: 3px;
+flex-wrap: wrap;
+ 
+
+}
+
+
+.get-in-touch{
+  width: 90%;
+}
+.name-mail{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.name-container{
+  margin: 2% 2% 2% 2%;
+  width: 100%;
+}
+.mail-container{
+  margin: 2% 2% 2% 2%;
+  width: 100%;
+}
+#name{
+  height: 6vh;
+}
+#email{
+  height: 6vh;
+}
+.message-container{
+  margin: 2% 2% 2% 2%;
+  
+}
+#message{
+  height: 20vh;
+}
+
+.btn{
+  margin-top: 3%;
+  height: 5.5vh;
+  width: 10%;
+}
+.title-2{
+  margin-bottom: 7%;
+  font-family: 'Cantarell', sans-serif;
+  color: white;
+  font-size: 5vh;
+}
+.message-adv{
+  color:white;
+  font-size: 1.5vh;
+  display: flex;
+  margin-left: 3%;
+  
+}
+.message-adv2{
+  color:white;
+  font-family: 'Cantarell', sans-serif;
+  font-size: 2.3vh;
+}
+
+
+.accept{
+  color: white;
+  font-size: 2.7vh;
+  
+}
+.accept-checkbox{
+  margin-left: 1%;
+}
+.contact-info{
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tw-logo{
+  width: 40%;
+  margin: 15%;
+
+}
+.ig-logo{
+  width: 37%;
+  margin: 15%;
+  
+}
+.fb-logo{
+  width: 30%;
+  margin: 15%;
+}
+.tw-logo:hover{
+  width: 55%;
+  margin: 15%;
+
+}
+.ig-logo:hover{
+  width: 47%;
+  margin: 15%;
+  
+}
+.fb-logo:hover{
+  width: 40%;
+  margin: 15%;
+  
+}
+
+/* PORTFOLIO */
+
+.agua-paint{
+  width: 60%;
+}
+.smoke-paint{
+  width: 60%;
+}
+.cry-paint{
+  width: 60%;
+}
+.contenedor-pintura{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+.contenedor-pintura:hover{
+  filter: drop-shadow(8px 8px 12px black);
+}
+.descripcion{
+  display: flex;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+}
+.text-desciption{
+  color:  white;
+  font-size: 2.5vh;
+ 
+  
+}
+.fila1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+.fila2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+.fila3{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* ARTISTA */
+
+.descrip{
+  font-size: 1.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+  width: 100%;
+  font-family: 'Cantarell', sans-serif;
+  margin-top: 30px;
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
